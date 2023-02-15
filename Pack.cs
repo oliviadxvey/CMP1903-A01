@@ -9,6 +9,7 @@ namespace CMP1903M_A01_2223
     class Pack
     {
         List<Card> pack;
+        Card[52];
 
         public Pack()
         {
