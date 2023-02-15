@@ -20,7 +20,7 @@ namespace CMP1903M_A01_2223
             //Shuffles the pack based on the type of shuffle
 
         }
-        public static Card deal()
+        public static Card dealCard()
         {
             //Deals one card
 
