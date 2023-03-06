@@ -134,4 +134,24 @@ namespace CMP1903M_A01_2223
             }
         }
     }
+
+    class Testing
+    {
+        public static void test()
+        {
+            Pack pack = new Pack();
+            List<Card> testCards = new List<Card>();
+
+            for (int i = 1; i < 4; i++) {
+                Pack.shuffleCardPack(i);
+            }
+
+            Console.WriteLine(Pack.deal().returnCard());
+            testCards = Pack.dealCard(5);
+
+            foreach (Card c in testCards) {
+                Console.WriteLine(c.returnCard());
+            }
+        }
+    }
 }
