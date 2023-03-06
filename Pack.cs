@@ -80,8 +80,7 @@ namespace CMP1903M_A01_2223
 
                     //Adds alternate cards from two halves to shuffled pack
 
-                    for (int i = 0; i < packSize / 2; i++)
-                    {
+                    for (int i = 0; i < packSize / 2; i++) {
                         Pack.shuffledPack.Add(packFront[i]);
                         Pack.shuffledPack.Add(packBack[i]);
                     }
