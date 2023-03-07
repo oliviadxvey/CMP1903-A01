@@ -16,13 +16,16 @@ namespace CMP1903M_A01_2223
         private int _value;
         public int val {
 
-        get {
-            if (_value >= 1 && _value <= 13) {
-                return _value;
-            }
-            else {
-                throw new ArgumentOutOfRangeException("Invalid number: Value is out of range.");
-            }
+        // Getters and setters with conditions to provide protection for the value and suit fields via encapsulation
+
+        get
+        {
+        if (_value >= 1 && _value <= 13) {
+            return _value;
+        }
+        else {
+            throw new ArgumentOutOfRangeException("Invalid number: Value is out of range.");
+        }
         }
 
         set {
@@ -34,6 +37,7 @@ namespace CMP1903M_A01_2223
 
         private int _suit;
         public int suit {
+
 
         get {
             if (_suit >= 1 && _suit <= 4) {
@@ -49,7 +53,8 @@ namespace CMP1903M_A01_2223
         }
         }
 
-        //Combining suit and value into single string, which will represent one card
+
+        //Additional method to combine suit and value into single string, which will represent one card
 
         public string returnCard()
         {
