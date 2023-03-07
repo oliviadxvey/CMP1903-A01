@@ -65,6 +65,8 @@ namespace CMP1903M_A01_2223
                 case 2:
                 //Riffle shuffle
 
+                    Pack.shuffledPack.Clear();
+
                     List<Card> packFront = new List<Card>();
                     List<Card> packBack = new List<Card>();
 
@@ -89,6 +91,7 @@ namespace CMP1903M_A01_2223
                 case 3:
                 //No shuffle, leaves pack as is
 
+                    Pack.shuffledPack.Clear();
                     Pack.shuffledPack = pack.cardPack;
                     break;
 
@@ -144,13 +147,16 @@ namespace CMP1903M_A01_2223
 
             for (int i = 1; i < 4; i++) {
                 Pack.shuffleCardPack(i);
-            }
+                Console.WriteLine("1 card for shuffle type " + i + ": " + Pack.deal().returnCard() + "\n");
 
-            Console.WriteLine(Pack.deal().returnCard());
-            testCards = Pack.dealCard(5);
+                testCards = Pack.dealCard(10);
+                Console.WriteLine("10 cards for shuffle type " + i + ":");
 
-            foreach (Card c in testCards) {
-                Console.WriteLine(c.returnCard());
+                foreach (Card c in testCards) {
+                    Console.WriteLine(c.returnCard());
+                }
+
+                Console.WriteLine(" ");
             }
         }
     }
