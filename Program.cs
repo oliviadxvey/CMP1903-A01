@@ -66,8 +66,7 @@ namespace CMP1903M_A01_2223
                             throw new ArgumentOutOfRangeException("Number must be either 1 or 2.");
                         }
 
-                        else
-                        {
+                        else {
                             if (userCards == 1) {
                                 Console.WriteLine("\nYour card: " + Pack.deal().returnCard());
                             }
