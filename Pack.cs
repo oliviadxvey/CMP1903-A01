@@ -141,6 +141,7 @@ namespace CMP1903M_A01_2223
     class Testing
     {
         public static void test()
+        //Additional test method for testing all three types of shuffle
         {
             Pack pack = new Pack();
             List<Card> testCards = new List<Card>();
