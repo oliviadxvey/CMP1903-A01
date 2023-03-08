@@ -105,7 +105,7 @@ namespace CMP1903M_A01_2223
 
             catch (NullReferenceException)
             {
-                throw new ArgumentOutOfRangeException("Null value detected.");
+                throw new ArgumentOutOfRangeException("Null value detected. There may be an issue with the card pack.");
             }
         }
 
@@ -125,7 +125,7 @@ namespace CMP1903M_A01_2223
 
             catch (NullReferenceException)
             {
-                throw new ArgumentOutOfRangeException("Null value detected.");
+                throw new ArgumentOutOfRangeException("Null value detected. There may be an issue with the card pack.");
             }
         }
     }
