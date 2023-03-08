@@ -24,7 +24,7 @@ namespace CMP1903M_A01_2223
             return _value;
         }
         else {
-            throw new ArgumentOutOfRangeException("Invalid number: Value is out of range.");
+            throw new ArgumentOutOfRangeException("Invalid number: Value is out of range. It must be between 1 and 13.");
         }
         }
 
@@ -44,7 +44,7 @@ namespace CMP1903M_A01_2223
                 return _suit;
             }
             else {
-                throw new ArgumentOutOfRangeException("Invalid number: Value is out of range.");
+                throw new ArgumentOutOfRangeException("Invalid number: Value is out of range. It must be between 1 and 4.");
             }
         }
 
