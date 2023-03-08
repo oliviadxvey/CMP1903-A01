@@ -17,23 +17,15 @@ namespace CMP1903M_A01_2223
 
             cardPack = new List<Card>(52);
 
-            for (int i = 1; i < 14; i++) {
-                cardPack.Add(new Card { val = i, suit = 1 });
+            for (int i = 1; i < 5; i++)
+            {
+                for (int j = 1; j < 14; j++)
+                {
+                    cardPack.Add(new Card { val = j, suit = i });
+                }
             }
 
-            for (int i = 1; i < 14; i++) {
-                cardPack.Add(new Card { val = i, suit = 2 });
-            }
-
-            for (int i = 1; i < 14; i++) {
-                cardPack.Add(new Card { val = i, suit = 3 });
-            }
-
-            for (int i = 1; i < 14; i++) {
-                cardPack.Add(new Card { val = i, suit = 4 });
-            }
-
-            //13 values for each of the four suits, from ace to king
+            //13 values for each of the 4 suits, from ace to king
         }
         
 
@@ -134,31 +126,6 @@ namespace CMP1903M_A01_2223
             catch (NullReferenceException)
             {
                 throw new ArgumentOutOfRangeException("Null value detected.");
-            }
-        }
-    }
-
-    //Additional testing class and method for testing all three types of shuffle
-
-    class Testing
-    {
-        public static void test()
-        {
-            Pack pack = new Pack();
-            List<Card> testCards = new List<Card>();
-
-            for (int i = 1; i < 4; i++) {
-                Pack.shuffleCardPack(i);
-                Console.WriteLine("1 card for shuffle type " + i + ": " + Pack.deal().returnCard() + "\n");
-
-                testCards = Pack.dealCard(10);
-                Console.WriteLine("10 cards for shuffle type " + i + ":");
-
-                foreach (Card c in testCards) {
-                    Console.WriteLine(c.returnCard());
-                }
-
-                Console.WriteLine(" ");
             }
         }
     }
