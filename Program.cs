@@ -121,7 +121,7 @@ namespace CMP1903M_A01_2223
             }
                 
             else {
-                throw new FormatException("Value must be single character, either T or F.");
+                throw new FormatException("Value must be a single character, either T or F.");
             }
         }
     }

@@ -55,6 +55,7 @@ namespace CMP1903M_A01_2223
 
 
         //Additional method to combine suit and value into single string, which will represent one card
+        //Means cards can be displayed to the user in a readable format on screen
 
         public string returnCard()
         {
